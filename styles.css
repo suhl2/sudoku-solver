@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 20px;
+}
+button {
+    margin-top: 10px;
+}
+
+.cell {
+    /* display: flex;
+    flex-flow: row wrap; */
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin-top: 10px;
+}
+input {
+    width: 40px;
+    margin-top: 50%;
+}

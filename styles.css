@@ -8,7 +8,12 @@ body {
     margin-left: 20px;
 }
 button {
+    margin-left: 10px;
     margin-top: 10px;
+    padding: 5px;
+}
+h1 {
+    margin-left: 10px;
 }
 
 .cell {
@@ -19,15 +24,23 @@ button {
     border: 1px solid black;
     padding: 5px;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 #board {
     display: flex;
     flex-wrap: wrap;
-    max-width: 300px;
+    max-width: 1000px;
     margin-top: 10px;
 }
 input {
     width: 40px;
     margin-top: 50%;
+}
+
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin: 10px;
 }

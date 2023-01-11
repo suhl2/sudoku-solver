@@ -10,3 +10,25 @@
 //if it runs through all rows, cols, and squares twice with no possible moves, declare puzzle unsolvable
 
 console.log("hey, listen");
+
+//DOM Selectors
+const cells = document.getElementsByClassName("cell");
+const cellInputs = document.getElementsByClassName("number-input");
+const submitButton = document.getElementById("solve");
+console.log(submitButton);
+
+const gameState = {
+    boardState: [[[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[4,5,6],[7,8,9]],
+                [[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[4,5,6],[7,8,9]],
+                [[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[4,5,6],[7,8,9]]]
+};
+const solvePuzzle = () => {
+
+    const inputValue = cellInputs[0].value;
+    cellInputs[0].value = "";
+    cellInputs[0].style.display = "none";
+    cells[0].innerText = `${inputValue}`;
+    console.log(inputValue);
+}
+submitButton.addEventListener("click", solvePuzzle);
+
